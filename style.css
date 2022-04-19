@@ -1,0 +1,64 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    position: absolute;
+    z-index: -1;
+}
+
+div {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    transition-duration: 1s;
+    transition-delay: 0.3s;
+}
+
+.d1 {
+    background-color: steelblue;
+}
+
+.d2 {
+    background-color: yellow;
+}
+
+.d3 {
+    background-color: dimgray;
+}
+
+.d4 {
+    background-color: rosybrown;
+}
+
+main:hover .d1{
+    transform: translateX(-200px) rotate(90deg);
+}
+
+main:hover .d2{
+    transform: translateX(-200px) rotate(-90deg);
+}
+
+main:hover .d3{
+    transform: translateX(200px) rotate(-90deg);
+}
+
+main:hover .d4{
+    transform: translateX(200px) rotate(90deg);
+}
